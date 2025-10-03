@@ -61,7 +61,7 @@ export default function Hero() {
           <div className="relative">
             <div className="relative w-full h-96 md:h-[500px] bg-black rounded-3xl overflow-hidden border border-gray-800 shadow-2xl">
               <img
-                src="https://ncdb.protocolo2r.store/dltemp/S97_Wq17dBSsy9eD/1759441200000/thumbnails/noco/p9sst1qpk93c1sc/mq6bxc0dmiubo6t/ch4rx70nkxkkkn6/upgradeperu_I5Ida.webp/card_cover.jpg"
+                src="https://ncdb.protocolo2r.store/download/noco/p9sst1qpk93c1sc/mq6bxc0dmiubo6t/ch4rx70nkxkkkn6/upgradeperu_I5Ida.webp"
                 alt="Up Grade Perú - Tecnología de Punta"
                 className="w-full h-full object-cover brightness-110"
               />

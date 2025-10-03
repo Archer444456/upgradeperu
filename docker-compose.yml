@@ -2,21 +2,10 @@ version: '3.8'
 
 services:
   web:
-    image: upgradeperu_web:latest
-    deploy:
-      replicas: 1
-      restart_policy:
-        condition: on-failure
-    networks:
-      - traefik_proxy
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.upgradeperu.rule=Host(`upgradeperu.protocolo2r.store`)"
-      - "traefik.http.routers.upgradeperu.entrypoints=websecure"
-      - "traefik.http.routers.upgradeperu.tls=true"
-      - "traefik.http.routers.upgradeperu.tls.certresolver=myresolver"
-
-networks:
-  traefik_proxy:
-    external: true
-
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: portfolio-web
+    ports:
+      - "8080:80"
+    restart: unless-stopped

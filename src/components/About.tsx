@@ -18,6 +18,29 @@ const values = [
   }
 ];
 
+const team = [
+  {
+    name: 'Arnold Ccopa',
+    role: 'Experto soluciones digitales',
+    imageUrl: 'https://ncdb.protocolo2r.store/dltemp/4cuTjqHTUagM0Aml/1759521600000/noco/p9sst1qpk93c1sc/mchcgvwg6fh63mn/c4cyf0f3101o3k3/IMG-20250816-WA0024_Wpy4t.jpg'
+  },
+  {
+    name: 'Brandon Clay',
+    role: 'Experto en HTML',
+    imageUrl: 'https://ncdb.protocolo2r.store/dltemp/q3zlonOCVrAVaDRS/1759521600000/noco/p9sst1qpk93c1sc/mchcgvwg6fh63mn/c4cyf0f3101o3k3/yourosa1_zVo4t.jpg'
+  },
+  {
+    name: 'Juan Jose',
+    role: 'Desarrollador Web y App',
+    imageUrl: 'https://ncdb.protocolo2r.store/dltemp/fZgh94OOsZpqdCEu/1759521600000/noco/p9sst1qpk93c1sc/mchcgvwg6fh63mn/c4cyf0f3101o3k3/demon-tana_YJNJq.webp'
+  },
+  {
+    name: 'Ignacio Aruvito',
+    role: 'Experto N8N y Backend',
+    imageUrl: 'https://ncdb.protocolo2r.store/dltemp/-ITzFy-VG5u85shj/1759521600000/noco/p9sst1qpk93c1sc/mchcgvwg6fh63mn/cger8fphvqd0hr5/28_JAmlE.webp'
+  }
+];
+
 export default function About() {
   return (
     <section id="about" className="py-20 bg-black relative overflow-hidden">
@@ -87,21 +110,24 @@ export default function About() {
             <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-blue-500 rounded-xl flex items-center justify-center">
               <Users className="text-white" size={32} />
             </div>
-            <h3 className="text-3xl font-bold text-white">Nuestro Equipo</h3>
+            <h3 className="text-3xl font-bold text-white">Nuestro Equipo de Expertos</h3>
           </div>
           <p className="text-gray-300 text-lg leading-relaxed mb-8">
             Contamos con un equipo multidisciplinario de expertos en marketing digital, desarrollo web, diseño UX/UI, inteligencia artificial y automatización. Cada miembro aporta su experiencia y pasión para garantizar el éxito de tu proyecto.
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-            {[1, 2, 3, 4].map((num) => (
-              <div key={num} className="group">
-                <div className="w-full aspect-square bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl mb-3 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                  <Users className="text-gray-600" size={48} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {team.map((member) => (
+              <div key={member.name} className="group text-center">
+                <div className="relative w-full aspect-square rounded-xl overflow-hidden mb-4 border-2 border-gray-800 group-hover:border-red-500 transition-all duration-300 group-hover:scale-105">
+                  <img
+                    src={member.imageUrl}
+                    alt={member.name}
+                    className="w-full h-full object-cover object-center"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                 </div>
-                <div className="text-center">
-                  <div className="text-white font-semibold">Especialista {num}</div>
-                  <div className="text-sm text-gray-500">Área de Expertise</div>
-                </div>
+                <h4 className="text-xl font-bold text-white">{member.name}</h4>
+                <p className="text-red-400">{member.role}</p>
               </div>
             ))}
           </div>

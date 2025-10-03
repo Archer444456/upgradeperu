@@ -51,7 +51,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">Ubicación</h4>
-                    <p className="text-gray-400">Lima, Perú</p>
+                    <p className="text-gray-400">Arequipa, Perú</p>
                   </div>
                 </div>
 
