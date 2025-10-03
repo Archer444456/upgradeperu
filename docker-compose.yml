@@ -2,21 +2,18 @@ version: '3.8'
 
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile
     image: upgradeperu_web:latest
-    deploy:
-      replicas: 1
-      restart_policy:
-        condition: on-failure
     networks:
       - traefik_proxy
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.portfolio.rule=Host(`upgradeperu.protocolo2r.store`)"
-      - "traefik.http.routers.portfolio.entrypoints=websecure"
-      - "traefik.http.routers.portfolio.tls.certresolver=myresolver"
+    deploy:
+      replicas: 1
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.upgradeperu.rule=Host(`upgradeperu.protocolo2r.store`)"
+        - "traefik.http.routers.upgradeperu.entrypoints=websecure"
+        - "traefik.http.routers.upgradeperu.tls.certresolver=myresolver"
+        - "traefik.http.services.upgradeperu.loadbalancer.server.port=80" # puerto interno de tu contenedor
+    restart: unless-stopped
 
 networks:
   traefik_proxy:
