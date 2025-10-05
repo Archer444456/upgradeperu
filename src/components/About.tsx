@@ -22,22 +22,22 @@ const team = [
   {
     name: 'Arnold Ccopa',
     role: 'Experto soluciones digitales',
-    imageUrl: 'https://ncdb.protocolo2r.store/dltemp/4cuTjqHTUagM0Aml/1759521600000/noco/p9sst1qpk93c1sc/mchcgvwg6fh63mn/c4cyf0f3101o3k3/IMG-20250816-WA0024_Wpy4t.jpg'
+    imageUrl: 'https://maroon-penguin-725432.hostingersite.com/images/Arnold-Ccopa.webp'
   },
   {
     name: 'Brandon Clay',
     role: 'Experto en HTML',
-    imageUrl: 'https://ncdb.protocolo2r.store/dltemp/q3zlonOCVrAVaDRS/1759521600000/noco/p9sst1qpk93c1sc/mchcgvwg6fh63mn/c4cyf0f3101o3k3/yourosa1_zVo4t.jpg'
+    imageUrl: 'https://maroon-penguin-725432.hostingersite.com/images/Clay-Brandon.webp'
   },
   {
-    name: 'Juan Jose',
+    name: 'Maria Luisa',
     role: 'Desarrollador Web y App',
-    imageUrl: 'https://ncdb.protocolo2r.store/dltemp/fZgh94OOsZpqdCEu/1759521600000/noco/p9sst1qpk93c1sc/mchcgvwg6fh63mn/c4cyf0f3101o3k3/demon-tana_YJNJq.webp'
+    imageUrl: 'https://maroon-penguin-725432.hostingersite.com/images/Disenadora.webp'
   },
   {
     name: 'Ignacio Aruvito',
     role: 'Experto N8N y Backend',
-    imageUrl: 'https://ncdb.protocolo2r.store/dltemp/-ITzFy-VG5u85shj/1759521600000/noco/p9sst1qpk93c1sc/mchcgvwg6fh63mn/cger8fphvqd0hr5/28_JAmlE.webp'
+    imageUrl: 'https://maroon-penguin-725432.hostingersite.com/images/Hackerup.webp'
   }
 ];
 
