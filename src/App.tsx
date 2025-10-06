@@ -4,7 +4,7 @@ import Services from './components/Services';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import WhatsAppButton from './components/WhatsAppButton';
+import N8nChatButton from './components/N8nChatButton';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <About />
       <Contact />
       <Footer />
-      <WhatsAppButton />
+      <N8nChatButton />
     </div>
   );
 }
