@@ -13,9 +13,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-2">
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent mb-4">
-              Up Grade Perú
-            </h3>
+            <img
+              className="h-12 w-auto mb-4"
+              src="https://upgradeperu.net/images/up.webp"
+              alt="Up Grade Perú Logo"
+            />
             <p className="text-gray-400 mb-6 max-w-md">
               Transformamos ideas en resultados reales. Especialistas en llevar tu empresa al siguiente nivel digital con tecnología de vanguardia.
             </p>
